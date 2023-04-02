@@ -1,0 +1,44 @@
+public class SandPatternExample {
+
+	public static void main(String[] args) {
+		int n =6;
+		
+		
+		for(int i=n;i>1;i--) {
+			for(int j=i;j<=n;j++) {
+				System.out.print("  ");
+			}
+			for(int j=2;j<=(2*i);j++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println();
+		}
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=i;j<=n;j++) {
+				System.out.print("  ");
+			}
+			for(int j=2;j<=(2*i);j++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println();
+		}
+
+	}
+
+}
+/*
+* * * * * * * * * * * 
+ * * * * * * * * * 
+   * * * * * * * 
+     * * * * * 
+       * * * 
+         * 
+       * * * 
+     * * * * * 
+   * * * * * * * 
+ * * * * * * * * * 
+* * * * * * * * * * * 
+*/
